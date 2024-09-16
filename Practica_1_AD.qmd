@@ -64,21 +64,42 @@ Como podemos observar, (exceptuando la última variable), se observan datos cual
 Convertimos las variables cualitativas en factores para trabajar con ellas:
 
 ```{r}
-datos$LOCALIDAD = as.factor(datos$LOCALIDAD)
-datos$TIPO_CENTRO = as.factor(datos$TIPO_CENTRO)
-datos$CENTRO = as.factor(datos$CENTRO)
-datos$ESTUDIO = as.factor(datos$ESTUDIO)
-datos$TIPO_ESTUDIO = as.factor(datos$TIPO_ESTUDIO)
-datos$NOMBRE_CCAA_ALUMNO = as.factor(datos$NOMBRE_CCAA_ALUMNO)
-datos$SEXO = as.factor(datos$SEXO)
-datos$MOVILIDAD_SALIDA = as.factor(datos$MOVILIDAD_SALIDA)
-datos$DEDICACION = as.factor(datos$DEDICACION)
+LOCALIDAD = as.factor(datos$LOCALIDAD)
+TIPO_CENTRO = as.factor(datos$TIPO_CENTRO)
+CENTRO = as.factor(datos$CENTRO)
+ESTUDIO = as.factor(datos$ESTUDIO)
+TIPO_ESTUDIO = as.factor(datos$TIPO_ESTUDIO)
+NOMBRE_CCAA_ALUMNO = as.factor(datos$NOMBRE_CCAA_ALUMNO)
+SEXO = as.factor(datos$SEXO)
+MOVILIDAD_SALIDA = as.factor(datos$MOVILIDAD_SALIDA)
+DEDICACION = as.factor(datos$DEDICACION)
 ```
 
 #Localidad
-Tomamos la variable de localidad ya que es con la que vamos a trabajar:
+Tomamos la variable de localidad y hacemos un factor de esta:
 
 ```{r}
-Localidad=datos$LOCALIDAD
+table(LOCALIDAD)
+```
+Así tenemos que la moda es Zaragoza, es decir.
+
+#Tipo Centro
+Esta vez, lo realizaremos con una tabla de frecuencias.
+
+```{r}
+prop.table(table(TIPO_CENTRO))
+```
+Podemos deducir, que el más común es la facultad ya que es el que muestra una frecuencia más alta. 
+
+#Centro
+
+A continuación, lo realizaremos con la función que nos da la moda.
+
+```{r}
+names(which(table(CENTRO)==max(table(CENTRO))))
+```
+En este caso, tenemos muchos posibles centros. Es por ello que hacemos también la tabla de frecuencias.
+```{r}
+prop.table(table(CENTRO))
 ```
 
