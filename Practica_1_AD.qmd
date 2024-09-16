@@ -81,7 +81,7 @@ Tomamos la variable de localidad y hacemos un factor de esta:
 table(LOCALIDAD)
 ```
 ```{r}
-pie(table(datos$LOCALIDAD), main="")
+pie(table(datos$LOCALIDAD), main="LOCALIDAD")
 ```
 
 
@@ -124,7 +124,7 @@ prop.table(table(CENTRO))
 ```
 
 ```{r}
-barplot(table(CENTRO), las = 2, main ="")
+barplot(table(CENTRO), las = 2, main ="CENTRO")
 ```
 
 # Estudio
@@ -157,7 +157,7 @@ max(prop.table(table(TIPO_ESTUDIO)))
 Añadimos un gráfico para más información:
 
 ```{r}
-barplot(table(TIPO_ESTUDIO), main="")
+barplot(table(TIPO_ESTUDIO), main="ESTUDIOS")
 ```
 
 
@@ -172,7 +172,7 @@ Al ser 20, podemos calcular la moda:
 names(which(table(NOMBRE_CCAA_ALUMNO)==max(table(NOMBRE_CCAA_ALUMNO))))
 ```
 ```{r}
-barplot(table(NOMBRE_CCAA_ALUMNO), las = 2, main ="")
+barplot(table(NOMBRE_CCAA_ALUMNO), las = 2, main ="CCAA ALUMNOS")
 ```
 
 
@@ -180,14 +180,14 @@ barplot(table(NOMBRE_CCAA_ALUMNO), las = 2, main ="")
 En este caso, solo tenemos dos datos, asi que consideramos que es más útil y más visual ver directamente el gráfico
 
 ```{r}
-pie(table(SEXO), main="")
+pie(table(SEXO), main="SEXO")
 ```
 
 #Movilidad
 Vemos directamente el gráfico por los mismos motivos que en el caso anterior.
 
 ```{r}
-barplot(table(MOVILIDAD_SALIDA), main = "")
+barplot(table(MOVILIDAD_SALIDA), main = "PROGRAMAS SALIDAS")
 ```
 
 
@@ -216,6 +216,8 @@ mediana
 Como podemos observar, los datos límites, hacen que la media se desvíe del valor que divide la información por su punto medio,por tanto, debemos considerar la mediana como indicador.
 
 ```{r}
-barplot(table(ALUMNOS_MATRICULADOS), main = "")
+barplot(table(ALUMNOS_MATRICULADOS), main = "ALUMNOS MATRICULADOS")
 ```
+
+
 
