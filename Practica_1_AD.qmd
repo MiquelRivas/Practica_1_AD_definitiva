@@ -81,14 +81,24 @@ Tomamos la variable de localidad y hacemos un factor de esta:
 ```{r}
 table(LOCALIDAD)
 ```
-Así tenemos que la moda es Zaragoza, es decir.
+Así tenemos que, visualizando la tabla, la moda es Zaragoza, aún así, usando el comando obtenemos directamente el resultado:
+```{r}
+names(which(table(LOCALIDAD)==max(table(LOCALIDAD))))
+```
+
 
 #Tipo Centro
 Esta vez, lo realizaremos con una tabla de frecuencias.
 
 ```{r}
-prop.table(table(TIPO_CENTRO))
+freqs=prop.table(table(TIPO_CENTRO))
+freqs
 ```
+
+```{r}
+max(freqs)
+```
+
 Podemos deducir, que el más común es la facultad ya que es el que muestra una frecuencia más alta. 
 
 #Centro
