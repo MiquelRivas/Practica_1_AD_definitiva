@@ -175,4 +175,34 @@ names(which(table(NOMBRE_CCAA_ALUMNO)==max(table(NOMBRE_CCAA_ALUMNO))))
 barplot(table(NOMBRE_CCAA_ALUMNO), las = 2, main ="")
 ```
 
-#
+
+#Sexo
+En este caso, solo tenemos dos datos, asi que consideramos que es más útil y más visual ver directamente el gráfico
+#Movilidad
+Vemos directamente el gráfico por los mismos motivos que en el caso anterior.
+
+
+
+#Dedicación
+
+Hacemos la moda con el comando anterior:
+```{r}
+names(which(table(DEDICACION)==max(table(DEDICACION))))
+```
+
+
+
+##Alumnos matriculados
+Vamos a comparar la mediana con la media.
+
+Primero calculemos la media.
+```{r}
+media=mean(ALUMNOS_MATRICULADOS)
+media
+```
+
+```{r}
+mediana=median(ALUMNOS_MATRICULADOS)
+mediana
+```
+Como podemos observar, los datos límites, hacen que la media se desvíe del valor que divide la información por su punto medio,por tanto, debemos considerar la mediana como indicador.
