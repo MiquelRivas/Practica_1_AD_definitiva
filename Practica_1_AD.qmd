@@ -58,3 +58,15 @@ En total tenemos 10 variables a analizar, las cuales son:
 10 - Alumnos matriculados: Cantidad de estudiantes matriculados según las variables anteriores.
 
 
+## Análisis de los datos
+Como podemos observar, (exceptuando la última variable), se observan datos 
+cualitativos. Por ello, para analizar sus tendencias, haremos uso de las
+frecuencias , la moda y uso de gráficos en la siguiente sección.
+
+#Localidad
+Analizamos 
+```{r}
+
+```
+
+
