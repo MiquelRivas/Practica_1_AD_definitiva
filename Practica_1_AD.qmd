@@ -71,6 +71,7 @@ NOMBRE_CCAA_ALUMNO = as.factor(datos$NOMBRE_CCAA_ALUMNO)
 SEXO = as.factor(datos$SEXO)
 MOVILIDAD_SALIDA = as.factor(datos$MOVILIDAD_SALIDA)
 DEDICACION = as.factor(datos$DEDICACION)
+ALUMNOS_MATRICULADOS=datos$ALUMNOS_MATRICULADOS
 ```
 
 #Localidad
@@ -141,7 +142,7 @@ max(prop.table(table(TIPO_ESTUDIO)))
 
 ```
 
-# Nombre ccaa alumno
+# Nombre CCAA alumno
 
 Comprovemos cuantas comunidades autónomas hay registradas:
 ```{r}
@@ -152,4 +153,4 @@ Al ser 20, pdemos calcular la moda:
 names(which(table(NOMBRE_CCAA_ALUMNO)==max(table(NOMBRE_CCAA_ALUMNO))))
 ```
 
-# 
+#
