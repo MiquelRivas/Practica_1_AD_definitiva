@@ -17,7 +17,12 @@ En este documento se presenta un análisis exploratorio de los datos Alumnos mat
 
 ## En este trabajo
 
-Se presenta un análisis exploratorio de los datos que contendrá: 1-Presentación de los datos 2-Análisis de las medidas en su tendencia central 3-Análisis de la variabilidad 4-Gráficos 5-Conclusiones
+Se presenta un análisis exploratorio de los datos que contendrá:
+1-Presentación de los datos 
+2-Análisis de las medidas en su tendencia central 
+3-Análisis de la variabilidad 
+4-Gráficos 
+5-Conclusiones
 
 ## Presetación de los datos:
 
@@ -38,3 +43,18 @@ A continuación, le quitamos los datos vacíos:
 ```{r}
 datos = na.omit(datos)
 ```
+
+# Descripción de las variables:
+En total tenemos 10 variables a analizar, las cuales son:
+1 - Localidad: Provincia de la que viene el estudiante.
+2 - Tipo centro: Naturaleza del centro en al que acude el estudiante (centro adscrito a alguna universidad, facultad, etc.).
+3 - Centro: Centro educativo donde el estudinte realizó los estudio.
+4 - Estudio: Nombre del estudio que realiza el estudiante.
+5 - Tipo estudio: Clasificación del grado que realiza el estudiante (Grado, máster, formación profesional, ...).
+6 - Nombre cca alumno: Comunidad auntónoma de la que proviene el estudiante.
+7 - Sexo: Género del estudiante.
+8 - Movilidad salida: Denota si el estudiante ha realizado algún programa de movilidad en el extranjero.
+9 - Dedicaión: Jornada laboral del estudiante.
+10 - Alumnos matriculados: Cantidad de estudiantes matriculados según las variables anteriores.
+
+
