@@ -11,6 +11,13 @@ Participantes: Álvaro Velasco Sobrino, Carlos Bayés Liébana, Miquel Rivas Van
 #| echo: false
 ```
 
+### Participantes
+Carlos Bayés Liébana,
+Álvaro Velasco Sobrino,
+Miquel Rivas Vanrell.
+
+
+## Introducción
 En este documento se presenta un análisis exploratorio de los datos Alumnos matriculados. Sexo, dedicación y procedencia. Curso 2024-2025. Universidad de Zaragoza
 
 (https://datos.gob.es/es/catalogo/u02100001-alumnos-matriculados-sexo-dedicacion-y-procedencia-curso-2024-2025-universidad-de-zaragoza)
