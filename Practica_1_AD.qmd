@@ -214,3 +214,7 @@ Como podemos observar, los datos límites, hacen que la media se desvíe del val
 ```{r}
 barplot(table(ALUMNOS_MATRICULADOS), main = "ALUMNOS MATRICULADOS")
 ```
+
+## Conclusiones
+
+Observando los datos, podemos concluir que la mayoría de los estudiantes de la universidad proviene de Zaragoza, que estudian en distintos tipos de centros, dentro de ellos el más frecuentado son las facultades. Dentro de cada tipo de centro, al que más se acude es la Escuela de Doctorado. Además, podemos ver que hay 174 estudios distintos, de los cuales, la mayoría son estudios de grado. La comunidad autónoma de procedencia de los alumnos más típica es Aragón y hay una ligera mayoría de mujeres ante los hombres. Podemos deducir que, por la cantidad de alumnos en programas de movilidad, poca gente sale a estudiar fuera de la universidad.
