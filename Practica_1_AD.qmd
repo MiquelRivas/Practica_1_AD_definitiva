@@ -62,9 +62,9 @@ En total tenemos 10 variables a analizar, las cuales son:
 Como podemos observar, (exceptuando la última variable), se observan datos cualitativos. Por ello, para analizar sus tendencias, haremos uso de las frecuencias , la moda y uso de gráficos en la siguiente sección.
 
 #Localidad
-Analizamos 
+Tomamos la variable de localidad ya que es con la que vamos a trabajar:
+
 ```{r}
-
+Localidad=datos$LOCALIDAD
 ```
-
 
