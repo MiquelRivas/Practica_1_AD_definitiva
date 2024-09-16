@@ -1,0 +1,40 @@
+---
+title: "Practica1_AD"
+format: html
+Asignatura: Análisis de datos
+Grado: Matemáticas
+Profesora: Irene María García Mosquera
+Participantes: Álvaro Velasco Sobrino, Carlos Bayés Liébana, Miquel Rivas Vanrell
+---
+
+```{r}
+#| echo: false
+```
+
+En este documento se presenta un análisis exploratorio de los datos Alumnos matriculados. Sexo, dedicación y procedencia. Curso 2024-2025. Universidad de Zaragoza
+
+(https://datos.gob.es/es/catalogo/u02100001-alumnos-matriculados-sexo-dedicacion-y-procedencia-curso-2024-2025-universidad-de-zaragoza)
+
+## En este trabajo
+
+Se presenta un análisis exploratorio de los datos que contendrá: 1-Presentación de los datos 2-Análisis de las medidas en su tendencia central 3-Análisis de la variabilidad 4-Gráficos 5-Conclusiones
+
+## Presetación de los datos:
+
+```{r}
+datos = read.table("datos_practica1.csv", sep=";", head=TRUE)
+head(datos)
+```
+
+Quitamos la primera y la última columna porque son redundantes:
+
+```{r}
+datos = datos[3:ncol(datos)-1]
+head(datos)
+```
+
+A continuación, le quitamos los datos vacíos:
+
+```{r}
+datos = na.omit(datos)
+```
