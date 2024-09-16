@@ -61,6 +61,20 @@ En total tenemos 10 variables a analizar, las cuales son:
 ## Análisis de los datos
 Como podemos observar, (exceptuando la última variable), se observan datos cualitativos. Por ello, para analizar sus tendencias, haremos uso de las frecuencias , la moda y uso de gráficos en la siguiente sección.
 
+Convertimos las variables cualitativas en factores para trabajar con ellas:
+
+```{r}
+datos$LOCALIDAD = as.factor(datos$LOCALIDAD)
+datos$TIPO_CENTRO = as.factor(datos$TIPO_CENTRO)
+datos$CENTRO = as.factor(datos$CENTRO)
+datos$ESTUDIO = as.factor(datos$ESTUDIO)
+datos$TIPO_ESTUDIO = as.factor(datos$TIPO_ESTUDIO)
+datos$NOMBRE_CCAA_ALUMNO = as.factor(datos$NOMBRE_CCAA_ALUMNO)
+datos$SEXO = as.factor(datos$SEXO)
+datos$MOVILIDAD_SALIDA = as.factor(datos$MOVILIDAD_SALIDA)
+datos$DEDICACION = as.factor(datos$DEDICACION)
+```
+
 #Localidad
 Tomamos la variable de localidad ya que es con la que vamos a trabajar:
 
