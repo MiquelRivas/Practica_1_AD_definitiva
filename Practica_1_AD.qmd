@@ -178,9 +178,17 @@ barplot(table(NOMBRE_CCAA_ALUMNO), las = 2, main ="")
 
 #Sexo
 En este caso, solo tenemos dos datos, asi que consideramos que es más útil y más visual ver directamente el gráfico
+
+```{r}
+pie(table(SEXO), main="")
+```
+
 #Movilidad
 Vemos directamente el gráfico por los mismos motivos que en el caso anterior.
 
+```{r}
+barplot(table(MOVILIDAD_SALIDA), main = "")
+```
 
 
 #Dedicación
@@ -206,3 +214,8 @@ mediana=median(ALUMNOS_MATRICULADOS)
 mediana
 ```
 Como podemos observar, los datos límites, hacen que la media se desvíe del valor que divide la información por su punto medio,por tanto, debemos considerar la mediana como indicador.
+
+```{r}
+barplot(table(ALUMNOS_MATRICULADOS), main = "")
+```
+
