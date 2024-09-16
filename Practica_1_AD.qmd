@@ -19,10 +19,8 @@ En este documento se presenta un análisis exploratorio de los datos Alumnos mat
 
 Se presenta un análisis exploratorio de los datos que contendrá:
 1-Presentación de los datos 
-2-Análisis de las medidas en su tendencia central 
-3-Análisis de la variabilidad 
-4-Gráficos 
-5-Conclusiones
+2-Análisis de datos y sus gráficos
+3-Conclusiones
 
 ## Presetación de los datos:
 
@@ -115,4 +113,43 @@ En este caso, tenemos muchos posibles centros. Es por ello que hacemos también 
 prop.table(table(CENTRO))
 barplot(table(CENTRO), las = 2, main ="")
 ```
+# Estudio
 
+Vemamos la cantidad de distintos tipo de estudio que hay:
+```{r}
+length(levels(ESTUDIO))
+```
+En esta sección, el hecho de tener un gran número de datos cualitativos distintos, como acabamos de comprobar, nos impide poder realizar tanto un análisis de medias como una gráfica adecuada.
+
+# Tipo Estudio
+
+Comprobemos la moda de estos datos:
+```{r}
+names(which(table(TIPO_ESTUDIO)==max(table(TIPO_ESTUDIO))))
+```
+Ahora veamos cuantos tipos de estudio hay:
+```{r}
+length(levels(TIPO_ESTUDIO))
+```
+Al haber 4, podemos realizar una tabla de frecuencias:
+```{r}
+prop.table(table(TIPO_ESTUDIO))
+```
+Por último, veamos el estudio con más frecuencia:
+```{r}
+max(prop.table(table(TIPO_ESTUDIO)))
+
+```
+
+# Nombre ccaa alumno
+
+Comprovemos cuantas comunidades autónomas hay registradas:
+```{r}
+length(levels(NOMBRE_CCAA_ALUMNO))
+```
+Al ser 20, pdemos calcular la moda:
+```{r}
+names(which(table(NOMBRE_CCAA_ALUMNO)==max(table(NOMBRE_CCAA_ALUMNO))))
+```
+
+# 
