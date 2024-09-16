@@ -80,6 +80,7 @@ Tomamos la variable de localidad y hacemos un factor de esta:
 
 ```{r}
 table(LOCALIDAD)
+pie(table(datos$LOCALIDAD), main="")
 ```
 Así tenemos que, visualizando la tabla, la moda es Zaragoza, aún así, usando el comando obtenemos directamente el resultado:
 ```{r}
@@ -93,6 +94,7 @@ Esta vez, lo realizaremos con una tabla de frecuencias.
 ```{r}
 freqs=prop.table(table(TIPO_CENTRO))
 freqs
+pie(table(datos$TIPO_CENTRO), main="")
 ```
 
 ```{r}
@@ -111,5 +113,6 @@ names(which(table(CENTRO)==max(table(CENTRO))))
 En este caso, tenemos muchos posibles centros. Es por ello que hacemos también la tabla de frecuencias.
 ```{r}
 prop.table(table(CENTRO))
+barplot(table(CENTRO), las = 2, main ="")
 ```
 
