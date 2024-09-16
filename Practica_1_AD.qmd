@@ -193,7 +193,7 @@ barplot(table(MOVILIDAD_SALIDA), main = "")
 
 #Dedicación
 
-Hacemos la moda con el comando anterior:
+Hacemos la moda con el comando anterior: 
 ```{r}
 names(which(table(DEDICACION)==max(table(DEDICACION))))
 ```
